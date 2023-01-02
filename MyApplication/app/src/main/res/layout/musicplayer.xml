@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00BCD4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="音频播放"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tou"
+        android:padding="10dp"/>
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+
+            android:layout_margin="18dp"
+            android:id="@+id/playbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/bo"
+            />
+
+        <Button
+            android:layout_margin="18dp"
+            android:id="@+id/pausebtn"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/ting"/>
+
+        <Button
+            android:layout_margin="18dp"
+            android:id="@+id/stopbtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/zhong"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/green2"
+    tools:context=".register">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="25dp">
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="用户名"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:width="350dp"
+                android:height="50dp"
+                android:hint="请输入用户名" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="密码"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:width="350dp"
+                android:height="50dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+        </TableRow>
+
+
+
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="性别"
+                android:textColor="#000000"/>
+            <RadioGroup>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男" />
+
+                    <RadioButton
+                        android:id="@+id/woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="女" />
+                </LinearLayout>
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="婚否"
+                android:textColor="#000000"/>
+
+            <ToggleButton
+                android:id="@+id/marraged"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="爱好"
+                android:textColor="#000000"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读" />
+
+                <CheckBox
+                    android:id="@+id/swimming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="游泳" />
+
+                <CheckBox
+                    android:id="@+id/running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="跑步" />
+
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:width="100dp"
+                android:height="50dp"
+                android:text="职位"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/position"
+                android:layout_width="350dp"
+                android:layout_height="50dp" />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:id="@+id/btncancle"
+                android:width="100dp"
+                android:height="50dp"
+                android:text="取消"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnregist"
+                android:width="100dp"
+                android:height="50dp"
+                android:text="注册"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
+
+
+

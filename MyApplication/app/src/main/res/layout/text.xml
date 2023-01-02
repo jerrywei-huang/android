@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="温度统计"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/main_barchart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </com.github.mikephil.charting.charts.BarChart>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="运动量统计"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/main_linechart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </com.github.mikephil.charting.charts.LineChart>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="支出统计"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/main_piechart"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
